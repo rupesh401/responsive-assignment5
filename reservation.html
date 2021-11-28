@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="pacific.css" />
+
+    <title>Pacific Trails Resort::Reservation</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Pacific Trails Resort</a></h1>
+    </header>
+
+    <!-- Navbar starts -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- wrapper with hero div main and footer -->
+    <div id="wrapper">
+      <div id="reshero"></div>
+      <main>
+        <h2>Reservation at Pacific Trails</h2>
+        <h3>Contact Us</h3>
+        <p>Required fields are marked with an asterisk&ast;</p>
+        <form
+          action="https://webdevbasics.net/scripts/pacific.php."
+          method="post"
+        >
+          <label for="myFName">&ast;First Name:</label>
+          <input type="text" name="myFName" />
+          <label for="myLName">&ast;Last Name:</label>
+          <input type="text" name="myLName" />
+          <label for="myEmail">&ast;E-mail:</label>
+          <input type="text" name="myEmail" id="email" />
+          <label for="myPhone">Phone:</label>
+          <input type="tel" name="myPhone" />
+          <label for="myDate">Arrival Date:</label>
+          <input type="date" name="myDate" id="arrivaldate" />
+          <label for="myNights">Nights:</label>
+          <input type="number" name="myNights" min="1" max="14" />
+          <label for="myComments">&ast;Comments:</label>
+          <textarea name="myComments" cols="20" rows="2"></textarea>
+          <input type="submit" id="mySubmit" name="submit" />
+        </form>
+      </main>
+
+      <!-- Footer starts -->
+      <footer>
+        Copyright &copy; 2020 Pacific Trails Resort <br />
+        <a href="mailto:rupesh@gautam.com">rupesh@gautam.com</a>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- Wrapper ends -->
+  </body>
+</html>
